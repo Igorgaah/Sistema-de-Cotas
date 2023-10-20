@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulador de Cotas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Simulador de Cotas</h1>
+
+        <form id="simuladorForm">
+            <label for="escolaPublica">1. Estudou os (03) três anos do Ensino Médio em escola pública?</label>
+            <select id="escolaPublica" name="escolaPublica" onchange="atualizarOpcoes()">
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <p id="opcoesPergunta1"></p>
+
+            <label for="renda">2. A renda bruta per capita da sua família é igual ou menor que 1,5 salário-mínimo?</label>
+            <select id="renda" name="renda" onchange="atualizarOpcoes()">
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <p id="opcoesPergunta2"></p>
+
+            <label for="autodeclaradoPPI">3. Você se autodeclara preto(a), pardo(a) ou indígena?</label>
+            <select id="autodeclaradoPPI" name="autodeclaradoPPI" onchange="atualizarOpcoes()">
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <p id="opcoesPergunta3"></p>
+
+            <label for="possuiDeficiencia">4. Você possui deficiência (física, auditiva, mental, múltipla ou transtorno do espectro autista)?</label>
+            <select id="possuiDeficiencia" name="possuiDeficiencia" onchange="atualizarOpcoes()">
+                <option value=""></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <p id="opcoesPergunta4"></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
